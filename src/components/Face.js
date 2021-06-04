@@ -13,6 +13,8 @@ const Face = ({
   eyeOffsetX,
   eyeOffsetY,
   eyeRadius,
+  innerRadius,
+  outerRadius,
 }) => {
   return (
     <FaceContainer
@@ -30,7 +32,7 @@ const Face = ({
         eyeOffsetY={eyeOffsetY}
         eyeRadius={eyeRadius}
       ></Eyes>
-      <Mouth></Mouth>
+      <Mouth outerRadius={outerRadius} innerRadius={innerRadius}></Mouth>
     </FaceContainer>
   );
 };
